@@ -9,7 +9,16 @@ import "bootstrap";
 import "../styles/index.scss";
 
 //import your own components
-import { Home } from "./component/home.js";
+import { SecondCounter } from "./component/home.js";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+let counter = 0;
+
+setInterval(function() {
+	counter++;
+	console.log(counter);
+	ReactDOM.render(
+		<SecondCounter digito={counter} />,
+		document.querySelector("#app")
+	);
+}, 50);
