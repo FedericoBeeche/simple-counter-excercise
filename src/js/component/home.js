@@ -5,28 +5,20 @@ import PropTypes from "prop-types";
 export function SecondCounter(props) {
 	return (
 		<div className="container">
-			<span className="badge badge-secondary">
-				{props.digito.toString()[0]}
-			</span>
-			<span className="badge badge-secondary">
-				{props.digito.toString()[1]}
-			</span>
-			<span className="badge badge-secondary">
-				{props.digito.toString()[2]}
-			</span>
-			<span className="badge badge-secondary">
-				{props.digito.toString()[3]}
-			</span>
-			<span className="badge badge-secondary">
-				{props.digito.toString()[4]}
-			</span>
-			<span className="badge badge-secondary">
-				{props.digito.toString()[5]}
-			</span>
+
+			<i className="iconoReloj fa fa-clock"></i>
+			<div className="digitoCuatro">{props.numeroCuatro % 10}</div>
+			<div className="digitoTres">{props.numeroTres % 10}</div>
+			<div className="digitoDos">{props.numeroDos % 10}</div>
+			<div className="digitoUno">{props.numeroUno % 10}</div>
+    
 		</div>
 	);
 }
 
 SecondCounter.propTypes = {
-	digito: PropTypes.number
+	numeroCuatro: PropTypes.number,
+	numeroTres: PropTypes.number,
+	numeroDos: PropTypes.number,
+	numeroUno: PropTypes.number
 };
