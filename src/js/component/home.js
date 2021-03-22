@@ -5,11 +5,13 @@ import PropTypes from "prop-types";
 export function SecondCounter(props) {
 	return (
 		<div className="container">
+
 			<i className="iconoReloj fa fa-clock"></i>
 			<div className="digitoCuatro">{props.numeroCuatro % 10}</div>
 			<div className="digitoTres">{props.numeroTres % 10}</div>
 			<div className="digitoDos">{props.numeroDos % 10}</div>
 			<div className="digitoUno">{props.numeroUno % 10}</div>
+    
 		</div>
 	);
 }

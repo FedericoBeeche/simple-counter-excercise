@@ -13,6 +13,7 @@ import { SecondCounter } from "./component/home.js";
 
 //render your react application
 let counter = 0;
+
 setInterval(function() {
 	var numCuatro = Math.floor(counter / 10000);
 	var numTres = Math.floor(counter / 1000);
@@ -31,3 +32,4 @@ setInterval(function() {
 		document.querySelector("#app")
 	);
 }, 100);
+
