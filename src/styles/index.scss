@@ -1,5 +1,19 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
+.container{
+    background-color: black;
+    width: 30%;
+}
+
+div {
+    display: flex;
+    padding: 10px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 60px;
+}
+
 /* 
 
     You can write your own styles here...
