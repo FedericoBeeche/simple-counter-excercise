@@ -1,17 +1,13 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-.container{
-    background-color: black;
-    width: 30%;
-}
-
 div {
-    display: flex;
-    padding: 10px;
     color: white;
     font-weight: bolder;
-    text-align: center;
     font-size: 60px;
+    background-color: black;
+    display: flex;
+    height: 10%;
+    margin: auto;
 }
 
 /* 

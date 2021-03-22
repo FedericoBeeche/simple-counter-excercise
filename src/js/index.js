@@ -30,4 +30,4 @@ setInterval(function() {
 		/>,
 		document.querySelector("#app")
 	);
-}, 5);
+}, 100);
